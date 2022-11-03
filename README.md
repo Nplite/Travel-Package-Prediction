@@ -54,13 +54,10 @@ To check remote url
 git remote -v
 To setup CI/CD pipeline in heroku we need 3 information
 
-HEROKU_EMAIL = ottizoubairi@gmail.com
+HEROKU_EMAIL = namdeopatil.1995@gmail.com
 HEROKU_API_KEY = <>
 HEROKU_APP_NAME = travelpackage-pred
 
 ## 📑Documentation
 
 Detailed Project Report , Archicture, LLD, HLD, Wireframe are in Github Project Architecture Folder.
-
-## Explanation Video:
-https://youtu.be/-6rRIefjE20

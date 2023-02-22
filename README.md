@@ -58,6 +58,4 @@ HEROKU_EMAIL = namdeopatil.1995@gmail.com
 HEROKU_API_KEY = <>
 HEROKU_APP_NAME = travelpackage-pred
 
-## 📑Documentation
 
-Detailed Project Report , Archicture, LLD, HLD, Wireframe are in Github Project Architecture Folder.

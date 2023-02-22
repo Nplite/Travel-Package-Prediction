@@ -33,7 +33,7 @@ class PackageData:
 
         try:
             self.Age = Age
-            self.TypofContact =TypeofContact   
+            self.TypeofContact =TypeofContact   
             self.CityTier =CityTier
             self.DurationOfPitch=DurationOfPitch
             self.Occupation=Occupation
@@ -67,7 +67,7 @@ class PackageData:
     def get_package_data_as_dict(self):
         try:
             input_data = {"Age": [self.Age],
-                         "TypofContact": [self.TypofContact],
+                         "TypofContact": [self.TypeofContact],
                          "CityTier": [self.CityTier],
                         "DurationOfPitch": [self.DurationOfPitch],
                          "Occupation": [self.Occupation],

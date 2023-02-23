@@ -46,18 +46,15 @@ class DataIngestion:
 
     def extract_tgz_file(self,tgz_file_path:str):
         try:
-            raw_data_dir = self.data_ingestion_config.raw_data_dir
-
-            if os.path.exists(raw_data_dir):
-                os.remove(raw_data_dir)
+            raw_data_dir = self.data_ingestion_config.raw_data_dir           
 
             os.makedirs(raw_data_dir,exist_ok=True)
             file_name=os.path.basename(tgz_file_path).split()[0]
 
             logging.info(f"Extracting tgz file: [{tgz_file_path}] into dir: [{raw_data_dir}]")
-            #with tarfile.open(tgz_file_path) as banking_tgz_file_obj:
-                #banking_tgz_file_obj.extractall(path=raw_data_dir)
-            shutil.copy(tgz_file_path,os.path.join(raw_data_dir,file_name))
+            with tarfile.open(tgz_file_path) as banking_tgz_file_obj:
+                banking_tgz_file_obj.extractall(path=raw_data_dir)
+            #shutil.copy(tgz_file_path,os.path.join(raw_data_dir,file_name))
             logging.info(f"Extraction completed")
 
         except Exception as e:
